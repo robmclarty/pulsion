@@ -1,2 +1,2 @@
-!function(){"use strict";var n=new WebSocket("ws://localhost:3000/ws"),o=function(o){console.log("sending: "+o),n.send(o)};n.onopen=function(n){console.log("connection to server opened"),o("this is my connection message")}}();
+"use strict";var send=function(n){return function(e){console.log("sending: "+e),n.send(e)}},on=function(n){return function(e,o){switch(e){case"open":n.onopen=o;case"close":n.onclose=o}}},init=function(n){var e=n.url,o=void 0===e?"":e,i=new window.WebSocket(o);return{on:on(i),send:send(i)}},index={init:init};module.exports=index;
 //# sourceMappingURL=pulsion.js.map

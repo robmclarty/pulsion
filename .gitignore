@@ -1,4 +1,4 @@
-build/**/*
+dist/tests*
 node_modules
 .sass_cache
 .DS_Store
