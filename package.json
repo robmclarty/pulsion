@@ -38,5 +38,7 @@
     "rollup-plugin-uglify": "1.0.1",
     "uglify-js": "2.7.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "ws": "2.0.3"
+  }
 }
